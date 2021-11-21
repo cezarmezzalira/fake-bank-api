@@ -1,6 +1,6 @@
 class TransactionController {
-  public getBalance(){
-    return {balance: 100};
+  public getBalance() {
+    return { balance: 100 };
   }
 }
 

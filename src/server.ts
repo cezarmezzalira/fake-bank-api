@@ -5,7 +5,7 @@ import routes from './routes';
 export class SetupServer {
   private app: Application;
 
-  constructor(private port = 3000){
+  constructor(private port = 3000) {
     this.app = express();
   }
 
@@ -15,7 +15,7 @@ export class SetupServer {
     await this.setupDatabase();
   }
 
-  private setupExpress() : void {
+  private setupExpress(): void {
     this.app.use(express.json());
   }
 
@@ -34,6 +34,6 @@ export class SetupServer {
   public start(): void {
     this.app.listen(this.port, () => {
       console.log(`Server listen on port: ${this.port}`);
-    })
+    });
   }
 }
