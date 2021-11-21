@@ -1,0 +1,27 @@
+{
+  "name": "fake-bank-api",
+  "version": "1.0.0",
+  "description": "Fake Bank API",
+  "main": "index.js",
+  "author": "Cezar Augusto Mezzalira",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "typescript",
+    "api",
+    "SQL"
+  ],
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.11.9",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
